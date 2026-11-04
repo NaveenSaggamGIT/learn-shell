@@ -4,6 +4,7 @@ var2=20;
 var3=naveen;
 echo "$var1+$var2"
 echo "$(($var1+$var2+$var3))"
+echo "${var1+var2+var3}"
 
 declare -i COUNT=10 # Iam declaring a variable as integer type
 COUNT=COUNT+1
