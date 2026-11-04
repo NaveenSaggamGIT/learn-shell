@@ -2,6 +2,7 @@
 echo Please enter the MARKS::
 read MARKS
 if [ $MARKS -gt 90]
+then
 echo "You are a topper"
 elif [ $MARKS -gt 80]
 then
