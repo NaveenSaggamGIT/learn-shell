@@ -10,7 +10,7 @@ COUNT=COUNT+1
 echo "COUNT is:: $COUNT"
 
 FRUITS=(APPLE BANANA ORANGE)
-echo "Fruits are:: ${FRUITS}"
+echo "Fruits are:: ${FRUITS[4]}"
 #echo "Fruits are:: ${FRUITS[0]}"
 #echo "Fruits are:: ${FRUITS[1]}"
 #echo "Fruits are:: ${FRUITS[2]}"
