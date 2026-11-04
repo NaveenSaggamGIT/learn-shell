@@ -6,9 +6,9 @@ if  [ $USERID -ne 0 ]; then
 fi
 validate() {
     if [ $? -eq 0 ]; then
-        echo "$1  is installed scuccessfully"
+        echo "$2  is installed scuccessfully"
     else
-        echo "$1  installation failed"
+        echo "$2  installation failed"
         exit 1
     fi
 }
