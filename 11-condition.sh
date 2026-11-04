@@ -4,7 +4,7 @@ read MARKS
 if [ $MARKS -gt 90 ]
 then
 echo "You are a topper"
-elif [ $MARKS -gt 80]
+elif [ $MARKS -gt 80 ]
 then
 echo "You are a First class student"
 elif [ $MARKS -gt 70 ]
