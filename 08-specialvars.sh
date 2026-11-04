@@ -1,0 +1,11 @@
+#!bin/bash
+
+
+###Special Variables in Shell Scripting
+
+echo "All arugs passed to the script are:: $@"
+echo "Number of arguments passed to the script are:: $#"
+echo "The name of the script is:: $0"
+echo "The first argument passed to the script is:: $1"
+echo "The second argument passed to the script is:: $2"
+echo "The third argument passed to the script is:: $3"
