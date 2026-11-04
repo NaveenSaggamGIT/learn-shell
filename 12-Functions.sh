@@ -8,7 +8,9 @@ validate() {
     if [ $? -eq 0 ]; then
         echo "$1 is installed scuccessfully"
     else
-
+        echo "$1 installation failed"
+        exit 1
+    fi
 }
 dnf install nginx -y
 validate $? "nginx web server"
