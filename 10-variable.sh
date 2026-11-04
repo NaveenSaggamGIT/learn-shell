@@ -15,3 +15,6 @@ echo "Fruits are:: ${FRUITS[4]}"
 #echo "Fruits are:: ${FRUITS[1]}"
 #echo "Fruits are:: ${FRUITS[2]}"
 echo "Fruits are:: ${FRUITS[@]}"
+
+name="Naveen"
+echo "Name is:: ${name}kumarsaggam"
