@@ -4,7 +4,7 @@
 ###Special Variables in Shell Scripting
 
 echo "All arugs passed to the script are:: $@"
-echo "All arugs passed to the script are:: $*"
+#echo "All arugs passed to
 echo "Number of arguments passed to the script are:: $#"
 echo "The name of the script is:: $0"
 echo "The first argument passed to the script is:: $1"
