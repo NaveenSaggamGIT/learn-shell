@@ -1,5 +1,5 @@
 #!bin/bash
-echo Please enter the marks::
+echo Please enter the MARKS::
 read MARKS
 if [$MARKS -gt 90]
 echo "You are a topper"
@@ -15,3 +15,4 @@ echo "You are a Third class student"
 else 
 echo "You are failed"
 fi
+
