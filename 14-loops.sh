@@ -24,10 +24,10 @@ for package in $@
 do
     dnf install installed $package -y &>> $logs_file
     if [ $? -eq 0 ]; then
-    echo "Installing package $package" &>> $logs_file
+    echo "Installing package $package" 
     dnf install $package -y &>> $logs_file
     validate $? "$package"
     else
-    echo "Package $package is already installed" &>> $logs_file
+    echo "Package $package is already installed" 
     fi
 done
