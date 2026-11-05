@@ -18,14 +18,16 @@ validate(){
         exit 1
     fi
 }
-dnf install nginx -y &>> $logs_file
-validate $? "nginx web server"
-dnf install mysql -y &>> $logs_file
-validate $? "mysql database server"
+
 
 for package in $@
 do
+    dnf install installed $package -y &>> $logs_file
+    if [ $? -eq 0 ]; then
     echo "Installing package $package" &>> $logs_file
     dnf install $package -y &>> $logs_file
     validate $? "$package"
+    else
+    echo "Package $package is already installed" &>> $logs_file
+    fi
 done
